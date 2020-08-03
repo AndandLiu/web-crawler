@@ -55,7 +55,7 @@ public final class CMPT456Analyzer extends StopwordAnalyzerBase {
   /** Builds an analyzer with no stop words.
    */
   public CMPT456Analyzer() throws IOException{
-    this(new CharArraySet(Files.readAllLines(Paths.get("stopwords.txt"), StandardCharsets.UTF_8), false));
+    this(new CharArraySet(Files.readAllLines(Paths.get("lucene/demo/src/java/org/apache/lucene/demo/stopwords.txt"), StandardCharsets.UTF_8), false));
   }
 
 

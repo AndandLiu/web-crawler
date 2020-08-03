@@ -203,7 +203,7 @@ public class TFIDFHtmlIndexFiles {
       doc.add(new TextField("title", docData.getTitle(), Field.Store.YES));
       doc.add(new TextField("contents", docData.getBody(), Field.Store.YES));
       
-      System.out.println(doc.get("contents"));
+      // System.out.println(doc.get("contents"));
 
       if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
         // New index, so we just add the document (no old document can be there):
